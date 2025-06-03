@@ -1,0 +1,23 @@
+@baseUrl = http://127.0.0.1:8000
+
+### Demo - Weather  
+POST {{baseUrl}}/weather
+Content-Type: application/json
+
+{
+  "messages": [
+    {
+      "role": "User",
+      "content": "What is the weather in mankato MN"
+    }
+  ]
+}
+
+### Demo - Weather  
+POST {{baseUrl}}/agent/weather
+Content-Type: application/json
+
+{
+  "message": "What is the weather in mankato MN",
+  "thread_id": ""
+}
